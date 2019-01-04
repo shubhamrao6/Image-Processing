@@ -1,0 +1,151 @@
+<<<<<<< HEAD
+			#######
+			QUIZ 05
+			#######
+
+Question 1  :-	Consider you want to use the Hough transform to detect an ellipse in an image. What are the dimensions of the accumulator space? In other words, how many parameters you need to estimate?  
+
+Answer  :-	5  
+
+
+Explanation:- 	2 for the center, 2 for the major and minor radii, and 1 for the rotation of the axes.
+
+
+
+Question 2  :-	Assume you have an image with a trimodal distribution, meaning you have 3 core pixel values (consider an histogram composed of 3 Gaussians). How would you use Otsu's method, designed only for bimodal distributions, to segment the image? Simply write your suggestion in the box below.  
+
+Answer  :-	Apply Ostu's method twice with a1 and a2
+
+
+
+Question 3  :-	Considering foreground/background segmentation via graph cuts, which one of the following is an appropriate function for the weights between nodes representing image pixels?  
+
+Answer  :-	A function of the grey (or color) difference between the pixels.  
+
+
+Explanation:- 	A function of the grey (or color) difference between the pixels.
+
+
+Question 4  :-	In the Mumford-Shah segmentation model, what would be a good measure to penalize for creating too many segments?  
+
+Answer  :-	The total segments' boundary length.  
+
+
+Explanation:- 	In the video, measuring the total length of the boundaries is a form of measuring how many segments were found (in fractals this will not apply).  
+
+
+
+Question 5  :-	How would you combine Otsu's algorithm with Mumford-Shah concepts to design a segmentation algorithm that considers both ideas simultaneously?  
+
+Answer  :-	Add a length term to Otsu's algorithm penalty function and perform brute-force search for the optimal threshold that minimizes the new penalty.  
+
+
+Explanation:- 	Add a length term to Otsu’s algorithm penalty function and perform brute-force search for the optimal threshold that minimizes the new penalty. In Otsu’s method we are minimizing the within variance, and that penalty function can be augmented with additional terms such as the length of the obtained segments. The recursive solution is lost and therefore all possible thresholds need to be tested for the one that minimizes the new augmented penalty.  
+
+
+
+Question 6  :-	The threshold computed by Otsu's method is unique.  
+
+Answer  :-	No.  
+
+
+
+
+Question 7  :-	Consider an image that is constant, with gray value A, except for a few straight lines of random orientation and length, but constant gray value B (A != B). Which technique/s can you use to segment all the pixels in the image into 2 groups, one for the background and one for the lines?  
+
+Answer  :-	Hough Transform &  Otsu's Algorithm  
+
+
+
+
+
+Question 8  :-	What is the fundamental difference between simple thresholding and Otsu's algorithm?  
+
+Answer  :-	Otsu's algorithm automatically computes the threshold.  
+
+
+
+
+
+Question 9  :-	The Hough transform can be used only for detecting straight lines, circles, and ellipses.  
+
+Answer  :-	False.  
+
+
+Explanation:- 	It can be used for any parametric model, though not always will be computationally efficient.  
+=======
+			#######
+			QUIZ 05
+			#######
+
+Question 1  :-	Consider you want to use the Hough transform to detect an ellipse in an image. What are the dimensions of the accumulator space? In other words, how many parameters you need to estimate?  
+
+Answer  :-	5  
+
+
+Explanation:- 	2 for the center, 2 for the major and minor radii, and 1 for the rotation of the axes.
+
+
+
+Question 2  :-	Assume you have an image with a trimodal distribution, meaning you have 3 core pixel values (consider an histogram composed of 3 Gaussians). How would you use Otsu's method, designed only for bimodal distributions, to segment the image? Simply write your suggestion in the box below.  
+
+Answer  :-	Apply Ostu's method twice with a1 and a2
+
+
+
+Question 3  :-	Considering foreground/background segmentation via graph cuts, which one of the following is an appropriate function for the weights between nodes representing image pixels?  
+
+Answer  :-	A function of the grey (or color) difference between the pixels.  
+
+
+Explanation:- 	A function of the grey (or color) difference between the pixels.
+
+
+Question 4  :-	In the Mumford-Shah segmentation model, what would be a good measure to penalize for creating too many segments?  
+
+Answer  :-	The total segments' boundary length.  
+
+
+Explanation:- 	In the video, measuring the total length of the boundaries is a form of measuring how many segments were found (in fractals this will not apply).  
+
+
+
+Question 5  :-	How would you combine Otsu's algorithm with Mumford-Shah concepts to design a segmentation algorithm that considers both ideas simultaneously?  
+
+Answer  :-	Add a length term to Otsu's algorithm penalty function and perform brute-force search for the optimal threshold that minimizes the new penalty.  
+
+
+Explanation:- 	Add a length term to Otsu’s algorithm penalty function and perform brute-force search for the optimal threshold that minimizes the new penalty. In Otsu’s method we are minimizing the within variance, and that penalty function can be augmented with additional terms such as the length of the obtained segments. The recursive solution is lost and therefore all possible thresholds need to be tested for the one that minimizes the new augmented penalty.  
+
+
+
+Question 6  :-	The threshold computed by Otsu's method is unique.  
+
+Answer  :-	No.  
+
+
+
+
+Question 7  :-	Consider an image that is constant, with gray value A, except for a few straight lines of random orientation and length, but constant gray value B (A != B). Which technique/s can you use to segment all the pixels in the image into 2 groups, one for the background and one for the lines?  
+
+Answer  :-	Hough Transform &  Otsu's Algorithm  
+
+
+
+
+
+Question 8  :-	What is the fundamental difference between simple thresholding and Otsu's algorithm?  
+
+Answer  :-	Otsu's algorithm automatically computes the threshold.  
+
+
+
+
+
+Question 9  :-	The Hough transform can be used only for detecting straight lines, circles, and ellipses.  
+
+Answer  :-	False.  
+
+
+Explanation:- 	It can be used for any parametric model, though not always will be computationally efficient.  
+>>>>>>> 7181a58c807271bd46774034d7f8240f8940de56
